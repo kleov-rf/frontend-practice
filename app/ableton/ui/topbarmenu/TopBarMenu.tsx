@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add'
 
 export default function TopBarMenu() {
   return (
-    <header className="flex items-center justify-between h-20 w-svw bg-white px-8 font-medium text-lg border-b-2 border-black">
+    <header className="flex items-center justify-between h-20 w-svw bg-white px-10 font-medium text-lg border-b-2 border-black">
       <section className="flex items-center gap-10">
         <Image src="/ableton.svg" width={70} height={0} alt="Ableton logo" />
         <nav className="flex items-center gap-10 pt-1.5">
