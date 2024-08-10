@@ -4,7 +4,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-16 px-32 py-20 bg-white text-lg border-t-2 border-black">
+    <footer className="flex flex-col gap-16 px-32 py-20 bg-white text-lg border-t-2">
       <span className="text-6xl font-semibold">Ableton</span>
       <section className="flex flex-col font-light gap-16">
         <div className="flex justify-between">
@@ -93,7 +93,7 @@ export default function Footer() {
                 id="language_select"
                 className="w-3/12 bg-zinc-100 p-2"
               >
-                <option selected>English</option>
+                <option>English</option>
                 <option>Spanish</option>
               </select>
               <select
@@ -101,7 +101,7 @@ export default function Footer() {
                 id="location_select"
                 className="w-6/12 bg-zinc-100 p-2"
               >
-                <option selected>United States</option>
+                <option>United States</option>
                 <option>Spain</option>
               </select>
             </div>
