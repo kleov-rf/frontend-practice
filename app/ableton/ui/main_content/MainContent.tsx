@@ -37,8 +37,8 @@ export default function MainContent() {
           className="w-full object-cover"
           style={{ height: height - 80 * 2 }}
           src={'/background.jpg'}
-          height={400}
-          width={400}
+          width={3500}
+          height={2333}
           alt="Ableton background"
         />
         <TitleDescriptionPair
@@ -67,8 +67,8 @@ export default function MainContent() {
         />
       </section>
       <span>
-        We're really proud of the work we've done so far. But there's so much
-        more to come. If you'd like to be a part of it, please join us.
+        We are really proud of the work we have done so far. But there is so
+        much more to come. If you would like to be a part of it, please join us.
       </span>
     </main>
   )
