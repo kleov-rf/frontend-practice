@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   company_overview,
   employee_welcoming,
@@ -10,12 +10,14 @@ import {
 } from './about-texts'
 import TitleDescriptionPair from './TitleDescriptionPair'
 import Image from 'next/image'
+import abletonBackground from '@/public/background.jpg'
 
 export default function MainContent() {
-  const [height, setHeight] = useState(window.innerHeight)
+  const [height, setHeight] = useState(0)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const handleResize = () => setHeight(window.innerHeight)
+    setHeight(window.innerHeight)
     window.addEventListener('resize', handleResize)
 
     return () => {
@@ -33,14 +35,23 @@ export default function MainContent() {
         </nav>
       </header>
       <section className="flex flex-col items-center gap-32 w-full px-28">
-        <Image
-          className="w-full object-cover"
+        <div
+          className="w-full object-cover relative flex items-center justify-center bg-zinc-100 h-svh"
           style={{ height: height - 80 * 2 }}
-          src={'/background.jpg'}
-          width={3500}
-          height={2333}
-          alt="Ableton background"
-        />
+        >
+          <Image
+            className="object-cover"
+            alt="Ableton background image"
+            fill
+            placeholder="blur"
+            sizes="100vw"
+            quality={100}
+            src={abletonBackground}
+          />
+          <span className="text-9xl font-semibold text-orange-600 z-10">
+            Ableton
+          </span>
+        </div>
         <TitleDescriptionPair
           title={company_overview.title}
           description={company_overview.description}

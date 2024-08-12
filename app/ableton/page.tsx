@@ -1,3 +1,4 @@
+'use client'
 import Footer from './ui/footer/Footer'
 import TopBarMenu from './ui/topbarmenu/TopBarMenu'
 import { Josefin_Sans } from 'next/font/google'
