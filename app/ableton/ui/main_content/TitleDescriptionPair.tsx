@@ -7,11 +7,11 @@ export default function TitleDescriptionPair({
 }) {
   return (
     <article className="flex flex-col max-w-screen-md gap-6">
-      <span className="font-medium text-3xl">{title}</span>
+      <p className="font-medium text-3xl">{title}</p>
       {description.map((description, key) => (
-        <span className="font-light text-xl" key={key}>
+        <p className="font-light text-xl" key={key}>
           {description}
-        </span>
+        </p>
       ))}
     </article>
   )
